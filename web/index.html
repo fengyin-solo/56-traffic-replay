@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>流量回放管理系统</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>流量回放管理系统</h1>
+  <section id="dashboard">
+    <h2>统计看板</h2>
+    <div id="stats" class="stats-grid"></div>
+  </section>
+  <section id="tasks-section">
+    <h2>回放任务列表</h2>
+    <table id="task-list">
+      <thead>
+        <tr><th>ID</th><th>会话ID</th><th>环境ID</th><th>状态</th><th>总请求</th><th>成功</th><th>失败</th><th>创建时间</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+  <section id="records-section">
+    <h2>流量记录列表</h2>
+    <table id="record-list">
+      <thead>
+        <tr><th>ID</th><th>会话ID</th><th>方法</th><th>路径</th><th>状态码</th><th>耗时(ms)</th><th>时间戳</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+  <script src="/app.js"></script>
+</body>
+</html>
